@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <!-- <img src="./Assets/logo.svg" alt="" srcset=""> -->
+    <div class="container flex bg-black">
+        <div class="left rounded ">
+            <div class="home bg-gray rounded p-1 ">
+                <div class="logo">
+                    <img class="invert" src="./Assets/logo.svg" alt="" srcset="">
+                    <img class="invert cross" src="./Assets/cross.svg" alt="" srcset="">
+                </div>
+                <ul>
+                    <li><img class="invert" src="./Assets/home.svg" alt="home" srcset="">Home
+                    </li>
+                    <li><img class="invert" src="./Assets/search.svg" alt="search" srcset="">Search</li>
+                </ul>
+
+            </div>
+            <div class="library bg-gray rounded m-2 p-1">
+                <div class="heading flex">
+                    <img class="invert" src="./Assets/library.svg" width="20" alt="" srcset="">
+                    <h2>Your library</h2>
+                </div>
+                <div class="song-list">
+                    <ul>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer">
+                    <a href="*">Legal</a>
+                    <a href="*">Safety </a>
+                    <a href="*">Privacy Center</a>
+                    <a href="*">Privacy Policy</a>
+                    <a href="*">Cookies</a>
+                    <a href="*">About Ads</a>
+                    <a href="*">Accessibility</a>
+                </div>
+            </div>
+        </div>
+        <div class="right rounded bg-gray">
+            <div class="header   p-1">
+                <div class="nav">
+                    <div class="handburger">
+                        <img class="invert" src="./Assets/handburger.svg" alt="">
+                    </div>
+                    <i class='fas fa-angle-left' style='font-size:20px'></i>
+                    <i class='fas fa-angle-right' style='font-size:20px'></i>
+                    <input type="text" placeholder="What do you want to play?">
+                </div>
+                <div class="buttons">
+                    <button class="btn-signup">SignUp</button>
+                    <button class="btn-login">Login</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylist ">
+                <h2>Spotify Playlist</h2>
+                <div class="cardContainer">
+
+                    <!-- ----------------------------------------------------------------- -->
+                </div>
+                <div class="playbar ">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="songinfo"></div>
+                    <div class="nextPrev">
+                        <i id="previous" class="fa-solid fa-caret-left"></i>
+                        <i id="play" class="fa-regular fa-circle-play"></i>
+                        <i id="next" class="fa-solid fa-caret-right"></i>
+                    </div>
+                    <div class="songtime"></div>
+                    <div class="volume">
+                        <img class="invert" src="./Assets/volume.svg" alt="" srcset="">
+                        <div class="range">
+                            <input id="range" type="range" name="" id="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
